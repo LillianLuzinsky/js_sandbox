@@ -51,17 +51,63 @@ var FirstName = 'tom';  //pascal case used for constructor function
 // console.log(name);
 //have to assign a value
 
-const person = {
-    name: 'john',
-    age: 30
-}
+// const person = {
+//     name: 'john',
+//     age: 30
+// }
 
-person.name = 'sarah';
+// person.name = 'sarah';
 
-// console.log(person.name);
+// // console.log(person.name);
 
-const people = ['tom', 'dick', 'harry'];
-people.push('sarah'); // tom, dick, harry, sarah
-people.unshift('jim');  // jim, tom, dick, harry, sarah
+// const people = ['tom', 'dick', 'harry'];
+// people.push('sarah'); // tom, dick, harry, sarah
+// people.unshift('jim');  // jim, tom, dick, harry, sarah
 
-console.log(people)
+// console.log(people)
+
+//--------PRIMITIVE DATA TYPES--------
+//string
+//numbers = integers, decimals, floats
+//boolean
+//null = empty value
+//undefined = a variable that has not been assigned a value
+//symbols
+
+// const name = 'john doe';
+// console.log(typeof name) //string
+
+// const number = 38;
+// console.log(typeof number) // number
+
+// const hasKids = true;
+// console.log(typeof hasKids); //boolean
+
+// const car = null;
+// console.log(typeof car);//object? this is a bug
+
+// let test;
+// console.log(typeof test); //undefined
+
+// const sym = Symbol();
+// console.log(typeof sym); //symbol
+
+// //-------- REFERENCE DATA TYPES -----------
+// //arrays
+// //object literals
+// //functions
+// //dates
+// //anything else
+
+// const hobbies = ['movies', 'music'];
+// console.log(typeof hobbies); // object
+
+// const address = {
+//     city: 'Boston',
+//     state: 'MA'
+// }
+// console.log(typeof address); //object
+
+// const today = new Date();
+// console.log(today); //Fri May 01 2020
+// console.log(typeof today); //object
