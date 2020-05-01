@@ -111,3 +111,56 @@ var FirstName = 'tom';  //pascal case used for constructor function
 // const today = new Date();
 // console.log(today); //Fri May 01 2020
 // console.log(typeof today); //object
+
+// --------TYPE CONVERSION --------
+let val;
+
+// number to string
+val = 5;
+val = String(5); // length = 1
+val = String(4+8); // length = 2 
+
+//Boolean to a string
+val = String(true); // length = 4
+
+//Date to string
+val= String(new Date()); // writes the entire date. 
+                        // length = 68
+
+//Array to string
+val = String([1,2,3,4]); // 1,2,3,4     length=7 (int and commas)
+
+//toString()
+val = (5).toString(); // acts the same as String(5)
+val = (true).toString(); //same as String(true);
+val = (new Date()).toString(); //same as String(new Date());
+
+// String to numbers
+val = Number('5');// toFixed 5.00
+
+// Boolean to number
+val = Number(true);// toFixed 1
+val = Number(false);// toFixed 0
+val = Number(null); // toFixed 0
+val = Number('hello')// toFixed NaN
+val = Number([1,2,3,4])// toFixed NaN
+
+//parseInt
+val = parseInt('100')//100
+val = parseFloat('100.20')// toFixed 100.20
+val = parseInt('hello')// NaN
+val = parseInt(false);// NaN
+
+// console.log(val);
+// console.log(typeof val);
+// // console.log(val.length); //undefined because length from a number doesn't work
+// console.log(val.toFixed(2));
+
+// type cohersion
+val1 = '5';
+val2 = 6;
+sum = Number(val1 + val2); //number
+
+console.log(sum); //56
+console.log(typeof sum); //string
+
