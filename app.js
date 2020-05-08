@@ -168,33 +168,105 @@ var FirstName = 'tom';  //pascal case used for constructor function
 
 //-------Numbers and the Math Object ------
 
-const num1 = 100;
-const num2 = 50;
+// const num1 = 100;
+// const num2 = 50;
+// let val;
+
+// //simple math with numbers
+// val = num1 + num2; // 150
+// val = num1 * num2; // 5000
+// val = num1 - num2; // 50
+// val = num1 / num2; // 2
+// val = num1 % num2; // 0
+
+// // Math object
+// val = Math.PI;//3.141592653589793
+// val = Math.E;//2.718281828459045
+// val = Math.round(2.8);//3
+// val = Math.round(2.4);//2
+// val = Math.ceil(2.4);//3
+// val = Math.floor(2.8);//2
+// val = Math.sqrt(64)//8
+// val = Math.abs(-3);//3
+// val = Math.pow(8, 2); //64
+// val = Math.min(2, 33, 4, 1, 55, 3, -2); //-2 
+// val = Math.max(2, 33, 4, 1, 55, 3, -2); //55
+
+// val = Math.random(2, 33, 4, 1, 55, 3, -2); //0.xxxxx
+// val = Math.random() * 20; // decimal
+// val = Math.floor(Math.random() * 20 + 1); // whole numbers excl 0
+
+
+// console.log(val);
+
+//---------STRING METHODS AND CONCATENATION---------
+
+const firstName2 = 'William';
+const lastName2 = 'Johnson';
+const age = 36;
+const str = 'hello there my name is Brad';
+const tags = 'web, web developer, programmer';
+
 let val;
 
-//simple math with numbers
-val = num1 + num2; // 150
-val = num1 * num2; // 5000
-val = num1 - num2; // 50
-val = num1 / num2; // 2
-val = num1 % num2; // 0
+//concatenate
+val = firstName2 + ' ' + lastName2;
 
-// Math object
-val = Math.PI;//3.141592653589793
-val = Math.E;//2.718281828459045
-val = Math.round(2.8);//3
-val = Math.round(2.4);//2
-val = Math.ceil(2.4);//3
-val = Math.floor(2.8);//2
-val = Math.sqrt(64)//8
-val = Math.abs(-3);//3
-val = Math.pow(8, 2); //64
-val = Math.min(2, 33, 4, 1, 55, 3, -2); //-2 
-val = Math.max(2, 33, 4, 1, 55, 3, -2); //55
+//append
+val = 'Brad ';
+val += 'Traversy'; //Brad Traversy
 
-val = Math.random(2, 33, 4, 1, 55, 3, -2); //0.xxxxx
-val = Math.random() * 20; // decimal
-val = Math.floor(Math.random() * 20 + 1); // whole numbers excl 0
+val = 'Hello, my name is ' + firstName2 + ' and I am ' + age;
+
+//escaping
+val = 'That\'s great, I can\'t wait';
+
+//length
+val = firstName2.length;//7
+
+//concat
+val = firstName2.concat(' ', lastName2);//William Johnson
+
+//Change case
+val = firstName2.toUpperCase();//WILLIAM
+val = lastName2.toLowerCase();//johnson
+
+val =  firstName2[0];//W
+val = lastName2[10]//undefined
+
+//indexOf()
+val = firstName2.indexOf('m')//6
+val = firstName2.indexOf('l')//2
+val = firstName2.lastIndexOf('l');//3 coming from the back
+
+//charAt()
+val = firstName2.charAt('2');//
+
+//get last character
+val = firstName2.charAt(firstName2.length -1);//m
+
+//substring
+val = firstName2.substring(0, 4);//Will
+
+//slice() = mostly used to pull things out of arrays
+val = firstName2.slice(0, 4);//Will
+val = firstName2.slice(-3);//iam
+
+//split() = split a string into an array
+val = str.split(' ');//["hello", "there", "my", "name", "is", "Brad"]
+val = str.split('');//["h", "e", "l"....]
+val = str.split(' ').length;//6
+val = str.split('').length;//27
+
+val = tags.split(',')//["web", "web developer", "progammer"]
+
+//replace()
+val = str.replace('Brad', 'Jack');//hello there my name is Jack
+
+//includes()
+val = str.includes('Hello');//false
+val = str.includes('hello');//true
+val = str.includes('Brad');//true
 
 
 console.log(val);
