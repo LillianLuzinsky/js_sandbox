@@ -273,39 +273,64 @@
 
 //-------TEMPLATE LITERALS-----------
 
-const name = 'John';
-const age = 30;
-const job = 'Web Developer';
-const city = 'Sydney';
-let html;
+// const name = 'John';
+// const age = 30;
+// const job = 'Web Developer';
+// const city = 'Sydney';
+// let html;
 
-function hello(){
-    return 'hello';
-}
+// function hello(){
+//     return 'hello';
+// }
 
-// Without template strings
+// // Without template strings
 
-html = '<ul><li>Name: ' + name + '</li><li>Age: ' + age + '</li><li>Job: ' + job + '</li><li>City: ' + city + '</li></ul>';
+// html = '<ul><li>Name: ' + name + '</li><li>Age: ' + age + '</li><li>Job: ' + job + '</li><li>City: ' + city + '</li></ul>';
 
-html = '<ul>' + 
-        '<li>Name: ' + name + '</li>' +
-        '<li>Age: ' + age + '</li>' +
-        '<li>Job: ' + job + '</li>' +
-        '<li>City: ' + city + '</li>' +
-        '</ul>'
+// html = '<ul>' + 
+//         '<li>Name: ' + name + '</li>' +
+//         '<li>Age: ' + age + '</li>' +
+//         '<li>Job: ' + job + '</li>' +
+//         '<li>City: ' + city + '</li>' +
+//         '</ul>'
 
-//With template strings
+// //With template strings
 
-html = `
-    <ul>
-        <li>Name: ${name}</li> 
-        <li>Age: ${age}</li>
-        <li>Job: ${job}</li>
-        <li>City: ${city}</li>
-        <li>${2+4}</li>
-        <li>${hello()}</li>
-        <li>${age >= 30 ? 'Over 30' : 'under 30'}</li>
-    </ul>
-`;
+// html = `
+//     <ul>
+//         <li>Name: ${name}</li> 
+//         <li>Age: ${age}</li>
+//         <li>Job: ${job}</li>
+//         <li>City: ${city}</li>
+//         <li>${2+4}</li>
+//         <li>${hello()}</li>
+//         <li>${age >= 30 ? 'Over 30' : 'under 30'}</li>
+//     </ul>
+// `;
 
-document.body.innerHTML = html;
+// document.body.innerHTML = html;
+
+ 
+//---------ARRAYS AND ARRAYS METHODS-----
+
+//create some arrays
+const numbers = [43, 56, 33, 23, 44, 46, 5];
+const numbers2 = new Array(22, 45, 76, 54);
+const fruit = ['apple', 'banana', 'orange', 'pear'];
+const mixed = [22, 'hello', true, undefined, null, {a:1, b:2}, new Date()];
+
+let val;
+
+//get array length
+val = numbers.length;//7
+
+//check if is array
+val = Array.isArray(numbers);//true
+val = Array.isArray('hello');//false
+
+//get a single value
+val = numbers[3];//23
+
+
+console.log(numbers);
+console.log(val);
