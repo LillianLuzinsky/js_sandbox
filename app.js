@@ -322,14 +322,36 @@ const mixed = [22, 'hello', true, undefined, null, {a:1, b:2}, new Date()];
 let val;
 
 //get array length
-val = numbers.length;//7
+val = numbers.length//7
 
 //check if is array
 val = Array.isArray(numbers);//true
 val = Array.isArray('hello');//false
 
-//get a single value
-val = numbers[3];//23
+//get a single value from an array
+val = numbers[0];//43
+
+//insert into an array
+numbers[2] = 100;//[43, 56, 100, 33, 23, 44, 46, 5]
+
+//find index of value
+val = numbers.indexOf(100);//2
+
+//----------MUTATING ARRAYS
+
+//add to the end
+numbers.push(255);//[43, 56, 100, 23, 44, 46, 5, 255]
+//add to the beginning
+numbers.unshift(120);//[120, 43, 56, 100, 23, 44, 46, 5, 255]
+
+//remove from end
+numbers.pop();//255 is gone
+//remove from beginning
+numbers.shift();//120 removed
+
+//splice values
+numbers.splice(1, 1);//56 is gone
+numbers.splice(0, 1)//43 is gone
 
 
 console.log(numbers);
