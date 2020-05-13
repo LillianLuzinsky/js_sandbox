@@ -339,20 +339,47 @@ val = numbers.indexOf(100);//2
 
 //----------MUTATING ARRAYS
 
-//add to the end
-numbers.push(255);//[43, 56, 100, 23, 44, 46, 5, 255]
-//add to the beginning
-numbers.unshift(120);//[120, 43, 56, 100, 23, 44, 46, 5, 255]
+// //add to the end
+// numbers.push(255);//[43, 56, 100, 23, 44, 46, 5, 255]
+// //add to the beginning
+// numbers.unshift(120);//[120, 43, 56, 100, 23, 44, 46, 5, 255]
 
-//remove from end
-numbers.pop();//255 is gone
-//remove from beginning
-numbers.shift();//120 removed
+// //remove from end
+// numbers.pop();//255 is gone
+// //remove from beginning
+// numbers.shift();//120 removed
 
-//splice values
-numbers.splice(1, 1);//56 is gone
-numbers.splice(0, 1)//43 is gone
+// //splice values
+// numbers.splice(1, 1);//56 is gone
+// numbers.splice(0, 1)//43 is gone
+
+// //reverse the array
+// numbers.reverse();//[5, 46, 44, 23, 100]
+
+// //concatenate arrays
+// val = numbers.concat(fruit);//[5, 46, 44, 23, 100, "apple", "banana", "orange", "pear"]
+
+//sort
+// val = fruit.sort();//["apple", "banana", "orange", "pear"]
+// // val = numbers.sort();//[100, 23, 43, 44, 46, 5, 56]
+
+// // //use the compare function
+// // val = numbers.sort(function(a, b){
+// //     return a - b;
+// // })//[5, 23, 43, 44, 46, 56, 100]
+
+// // //reverse sort
+// // val = numbers.sort(function(a, b){
+// //     return b - a;
+// // })//[100, 56, 46, 44, 43, 23, 5]
 
 
-console.log(numbers);
-console.log(val);
+// // find
+// function over50(num){
+//     return num > 50;
+// }
+
+// val = numbers.find(over50);//56 first number over 50
+
+// console.log(numbers);
+// console.log(val);
