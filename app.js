@@ -314,28 +314,28 @@
 //---------ARRAYS AND ARRAYS METHODS-----
 
 //create some arrays
-const numbers = [43, 56, 33, 23, 44, 46, 5];
-const numbers2 = new Array(22, 45, 76, 54);
-const fruit = ['apple', 'banana', 'orange', 'pear'];
-const mixed = [22, 'hello', true, undefined, null, {a:1, b:2}, new Date()];
+// const numbers = [43, 56, 33, 23, 44, 46, 5];
+// const numbers2 = new Array(22, 45, 76, 54);
+// const fruit = ['apple', 'banana', 'orange', 'pear'];
+// const mixed = [22, 'hello', true, undefined, null, {a:1, b:2}, new Date()];
 
-let val;
+// let val;
 
-//get array length
-val = numbers.length//7
+// //get array length
+// val = numbers.length//7
 
-//check if is array
-val = Array.isArray(numbers);//true
-val = Array.isArray('hello');//false
+// //check if is array
+// val = Array.isArray(numbers);//true
+// val = Array.isArray('hello');//false
 
-//get a single value from an array
-val = numbers[0];//43
+// //get a single value from an array
+// val = numbers[0];//43
 
-//insert into an array
-numbers[2] = 100;//[43, 56, 100, 33, 23, 44, 46, 5]
+// //insert into an array
+// numbers[2] = 100;//[43, 56, 100, 33, 23, 44, 46, 5]
 
-//find index of value
-val = numbers.indexOf(100);//2
+// //find index of value
+// val = numbers.indexOf(100);//2
 
 //----------MUTATING ARRAYS
 
@@ -383,3 +383,54 @@ val = numbers.indexOf(100);//2
 
 // console.log(numbers);
 // console.log(val);
+
+
+//---------OBJECT LITERALS------
+const person = {
+    firstName: 'Steve',
+    lastName: 'Smith',
+    age: 39,
+    email: 'steve@aol.com',
+    hobbies: ['music', 'sports'],
+    address: {
+        city: 'Miami',
+        state: 'Florida'
+    },
+    getBirthYear : function(){
+        return 2020 - this.age;//if it's just age, you get an error
+    }
+}
+
+let val;
+
+val = person;//{firstName: "Steve"}
+//get specific value
+val = person.lastName;//Smith
+val = person.firstName;//Steve
+val = person.age;//30
+val = person.hobbies//["music", "sports"]
+val = person.hobbies[1]//sports
+val = person.address;//{city: "Miami", state: "Florida"}
+val = person.address.state;//Florida
+val = person.getBirthYear();//1981
+
+const people = [
+    {name: 'John', age: 30},
+    {name: 'Mike', age: 23}
+]
+
+for(let i=0; i < people.length; i++){
+    console.log(people[i])
+}   //{name: "John", age: 30}
+    //{name: "Mike", age: 23}
+
+for(let i=0; i < people.length; i++){
+    console.log(people[i].name)
+}// John Mike
+
+
+
+
+
+
+console.log(val);
