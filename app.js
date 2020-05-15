@@ -386,51 +386,72 @@
 
 
 //---------OBJECT LITERALS------
-const person = {
-    firstName: 'Steve',
-    lastName: 'Smith',
-    age: 39,
-    email: 'steve@aol.com',
-    hobbies: ['music', 'sports'],
-    address: {
-        city: 'Miami',
-        state: 'Florida'
-    },
-    getBirthYear : function(){
-        return 2020 - this.age;//if it's just age, you get an error
-    }
-}
+// const person = {
+//     firstName: 'Steve',
+//     lastName: 'Smith',
+//     age: 39,
+//     email: 'steve@aol.com',
+//     hobbies: ['music', 'sports'],
+//     address: {
+//         city: 'Miami',
+//         state: 'Florida'
+//     },
+//     getBirthYear : function(){
+//         return 2020 - this.age;//if it's just age, you get an error
+//     }
+// }
+
+// let val;
+
+// val = person;//{firstName: "Steve"}
+// //get specific value
+// val = person.lastName;//Smith
+// val = person.firstName;//Steve
+// val = person.age;//30
+// val = person.hobbies//["music", "sports"]
+// val = person.hobbies[1]//sports
+// val = person.address;//{city: "Miami", state: "Florida"}
+// val = person.address.state;//Florida
+// val = person.getBirthYear();//1981
+
+// const people = [
+//     {name: 'John', age: 30},
+//     {name: 'Mike', age: 23}
+// ]
+
+// for(let i=0; i < people.length; i++){
+//     console.log(people[i])
+// }   //{name: "John", age: 30}
+//     //{name: "Mike", age: 23}
+
+// for(let i=0; i < people.length; i++){
+//     console.log(people[i].name)
+// }// John Mike
+
+
+//----------DATES AND TIMES -----------
 
 let val;
 
-val = person;//{firstName: "Steve"}
-//get specific value
-val = person.lastName;//Smith
-val = person.firstName;//Steve
-val = person.age;//30
-val = person.hobbies//["music", "sports"]
-val = person.hobbies[1]//sports
-val = person.address;//{city: "Miami", state: "Florida"}
-val = person.address.state;//Florida
-val = person.getBirthYear();//1981
+const today = new Date();
+let bDay = new Date('11-18-,1981');
+bDay = new Date('September 10 1981');
+bDay = new Date('11/18/1981');
 
-const people = [
-    {name: 'John', age: 30},
-    {name: 'Mike', age: 23}
-]
+val = today.getMonth();
+val = today.getDate();
+val = today.getDay();
+val = today.getFullYear();
+val = today.getHours();
+val = today.getMinutes();
+val = today.getSeconds();
+val = today.getTime();
 
-for(let i=0; i < people.length; i++){
-    console.log(people[i])
-}   //{name: "John", age: 30}
-    //{name: "Mike", age: 23}
-
-for(let i=0; i < people.length; i++){
-    console.log(people[i].name)
-}// John Mike
+bDay.setMonth(2);
+bDay.setDate(12);
+bDay.setFullYear(1983);
+bDay.setHours(3);
+bDay.setMinutes(30);
 
 
-
-
-
-
-console.log(val);
+console.log(bDay);
