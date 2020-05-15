@@ -697,6 +697,21 @@ const car = ['Ford', 'Chevy', 'Honda', 'Toyota'];
 // }
 
 //FOR EACH LOOP
-car.forEach(function(car){
-    console.log(car)
-})
+// car.forEach(function(car){
+//     console.log(car)
+// })
+
+//MAP
+//returns a different array
+// const users = [
+//     {id:1, name: 'John'},
+//     {id: 2, name: 'Sara'},
+//     {id: 3, name: 'Karen'},
+//     {id: 4, name: 'Steve'}
+// ];
+
+// const names = users.map(function(user){
+//     return user.name;
+// });
+
+// console.log(names);
