@@ -776,8 +776,14 @@ val = window.location.search;
 //reload
 // window.location.reload;
 
-//history object
-
+//navigator object
+val = window.navigator;
+val = window.navigator.appName;
+val = window.navigator.appVersion;
+val = window.navigator.userAgent;
+val = window.navigator.platform;
+val = window.navigator.vendor;
+val = window.navigator.language;
 
 
 console.log(val);
