@@ -729,3 +729,40 @@ const car = ['Ford', 'Chevy', 'Honda', 'Toyota'];
 // for(let key in user){
 //     console.log(`${key}: ${user[key]}`);
 // }
+
+
+//------WINDOW METHODS / OBJECTS / PROPERTIES
+
+//alert
+// window.alert('Hello World');
+
+//prompt
+// const input = prompt();
+// alert(input);
+
+//confirm
+// if(confirm('Are you sure')){
+//     console.log('yes');
+// }else{
+//     console.log('no');
+// }
+
+
+//PROPERTIES
+
+let val;
+
+//outer height and width
+val = window.outerHeight;
+val = window.outerWidth;
+
+val = window.innerHeight;
+
+//scroll points
+val = window.scrollY;
+//good for animation when scrolling (parallax?)
+
+
+
+
+console.log(val);
