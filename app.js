@@ -431,27 +431,82 @@
 
 //----------DATES AND TIMES -----------
 
-let val;
+// let val;
 
-const today = new Date();
-let bDay = new Date('11-18-,1981');
-bDay = new Date('September 10 1981');
-bDay = new Date('11/18/1981');
+// const today = new Date();
+// let bDay = new Date('11-18-,1981');
+// bDay = new Date('September 10 1981');
+// bDay = new Date('11/18/1981');
 
-val = today.getMonth();
-val = today.getDate();
-val = today.getDay();
-val = today.getFullYear();
-val = today.getHours();
-val = today.getMinutes();
-val = today.getSeconds();
-val = today.getTime();
+// val = today.getMonth();
+// val = today.getDate();
+// val = today.getDay();
+// val = today.getFullYear();
+// val = today.getHours();
+// val = today.getMinutes();
+// val = today.getSeconds();
+// val = today.getTime();
 
-bDay.setMonth(2);
-bDay.setDate(12);
-bDay.setFullYear(1983);
-bDay.setHours(3);
-bDay.setMinutes(30);
+// bDay.setMonth(2);
+// bDay.setDate(12);
+// bDay.setFullYear(1983);
+// bDay.setHours(3);
+// bDay.setMinutes(30);
 
 
-console.log(bDay);
+//------IF STATEMENTS AND COMPARISON OPERATORS ------
+
+// const id = 100
+
+//correct way in testing if something is undefined use typeof
+
+// if(typeof id !== 'undefined'){
+//     console.log(`the id is ${id}`)
+// } else {
+//     console.log('no id');
+// }
+
+
+//greater than or less than
+// if (id >= 200){
+//     console.log('correct');
+// } else {
+//     console.log('incorrect')
+// }
+
+//if else
+// const colour = 'blue';
+
+// if (colour === 'red'){
+//     console.log('colour is red');
+// } else if (colour === 'blue'){
+//     console.log('colour is blue')
+// } else {
+//     console.log('other colour')
+// }
+
+
+//logical operators
+
+// const name = 'Steve';
+// const age = 4;
+
+// // AND &&
+// if(age > 0 && age < 12){
+//     console.log(`${name} is a child`)
+// } else if(age >= 13 && age <= 19){
+//     console.log(`${name} is a teenager`)
+// } else {
+//     console.log(`${name} is an adult`)
+// }
+
+// // OR ||
+
+// if(age < 16 || age > 65){
+//     console.log(`${name} cannot run in the race`)
+// } else {
+//     console.log(`${name} is registerred in the race`)
+// }
+
+// //TERNARY OPERATOR
+// console.log(id === 100 ? 'correct' : 'incorrect');
