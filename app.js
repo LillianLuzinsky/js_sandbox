@@ -560,3 +560,27 @@
 // }
 
 // console.log(`today is ${day}`)//today is Friday
+
+
+//------FUNCTION DECLARATIONS AND EXPRESSIONS-----
+
+//function declarations
+function greet(firstName = 'John', lastName = 'Doe'){
+    return 'hello ' + firstName + ' ' + lastName;
+}
+
+console.log(greet('Steve', 'Smith'));
+
+//function expression
+const square = function(x){
+    return x*x;
+};
+
+function square2(x = 7){
+    return x*x;
+}
+
+console.log(square(8))//64
+console.log(square2(5))//25
+
+//immediately invokeable function expression - IIFE
