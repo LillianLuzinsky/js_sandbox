@@ -760,8 +760,23 @@ val = window.innerHeight;
 
 //scroll points
 val = window.scrollY;
+val = window.scrollX;
 //good for animation when scrolling (parallax?)
 
+// Location Object
+val = window.location;
+val = window.location.hostname;
+val = window.location.port;
+val = window.location.protocol;
+val = window.location.search;
+
+//redirect
+// window.location.href = "http://google.com";
+
+//reload
+// window.location.reload;
+
+//history object
 
 
 
