@@ -597,19 +597,53 @@
 
 //PROPERTY METHODS - when a function is put inside of an object, it's called a method
 
-const todo = {
-    add: function(){
-        console.log('Add todo...')
-    },
-    edit: function(id){
-        console.log(`Edit todo ${id}`)
-    }
-}
+// const todo = {
+//     add: function(){
+//         console.log('Add todo...')
+//     },
+//     edit: function(id){
+//         console.log(`Edit todo ${id}`)
+//     }
+// }
 
-todo.delete = function(){
-    console.log('Delete todo');
-}
+// todo.delete = function(){
+//     console.log('Delete todo');
+// }
 
-todo.add();
-todo.edit(22);
-todo.delete();
+// todo.add();
+// todo.edit(22);
+// todo.delete();
+
+
+//--------GENERAL LOOPS----------
+//a loop is an instruction is repeated until a specific condition is reached 
+
+//For loop
+
+// for (let i=0; i <= 10; i++){
+//     console.log('number ' + i);
+// }
+
+// for (let i=0; i<=10; i++){
+//     if(i === 2){
+//         console.log('2 is my favourite number')
+//         continue;//replaces
+//     }
+
+//     if(i === 5){
+//         console.log('Stop the loop')
+//         break;
+//     }
+
+//     console.log('number ' + i)
+// }
+
+
+//While loop
+
+let i = 0;
+
+while(i <= 10){
+    console.log(i);
+    i++;
+}
