@@ -591,7 +591,25 @@
 //     console.log('IIFE Ran...');
 // })();
 
-(function(name){
-    console.log('Hello ' + name);
-})('Sam');
+// (function(name){
+//     console.log('Hello ' + name);
+// })('Sam');
 
+//PROPERTY METHODS - when a function is put inside of an object, it's called a method
+
+const todo = {
+    add: function(){
+        console.log('Add todo...')
+    },
+    edit: function(id){
+        console.log(`Edit todo ${id}`)
+    }
+}
+
+todo.delete = function(){
+    console.log('Delete todo');
+}
+
+todo.add();
+todo.edit(22);
+todo.delete();
