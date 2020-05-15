@@ -750,40 +750,75 @@ const car = ['Ford', 'Chevy', 'Honda', 'Toyota'];
 
 //PROPERTIES
 
-let val;
+// let val;
 
-//outer height and width
-val = window.outerHeight;
-val = window.outerWidth;
+// //outer height and width
+// val = window.outerHeight;
+// val = window.outerWidth;
 
-val = window.innerHeight;
+// val = window.innerHeight;
 
-//scroll points
-val = window.scrollY;
-val = window.scrollX;
-//good for animation when scrolling (parallax?)
+// //scroll points
+// val = window.scrollY;
+// val = window.scrollX;
+// //good for animation when scrolling (parallax?)
 
-// Location Object
-val = window.location;
-val = window.location.hostname;
-val = window.location.port;
-val = window.location.protocol;
-val = window.location.search;
+// // Location Object
+// val = window.location;
+// val = window.location.hostname;
+// val = window.location.port;
+// val = window.location.protocol;
+// val = window.location.search;
 
-//redirect
-// window.location.href = "http://google.com";
+// //redirect
+// // window.location.href = "http://google.com";
 
-//reload
-// window.location.reload;
+// //reload
+// // window.location.reload;
 
-//navigator object
-val = window.navigator;
-val = window.navigator.appName;
-val = window.navigator.appVersion;
-val = window.navigator.userAgent;
-val = window.navigator.platform;
-val = window.navigator.vendor;
-val = window.navigator.language;
+// //navigator object
+// val = window.navigator;
+// val = window.navigator.appName;
+// val = window.navigator.appVersion;
+// val = window.navigator.userAgent;
+// val = window.navigator.platform;
+// val = window.navigator.vendor;
+// val = window.navigator.language;
 
 
-console.log(val);
+// console.log(val);
+
+
+//----BLOCK SCOPE WITH LET AND CONST
+
+//Global
+var a = 1;
+let b = 2;
+const c = 3;
+
+// function test(){
+//     var a = 4;
+//     let b = 5;
+//     const c = 6;
+//     console.log('Function Scope', a, b, c);
+// }
+
+// test();
+
+
+//BLOCK LEVEL SCOPE = anything wrapped in {}
+
+// if(true){
+//     //Block scope
+//     var a = 4;
+//     let b = 5;
+//     const c = 6;
+//     console.log('if scope ', a, b, c)
+// }
+
+// for(let a = 0; a < 10; a++){
+//     console.log(`loop ${a}`);
+// }
+
+// console.log('Global Scope', a, b, c);
+
