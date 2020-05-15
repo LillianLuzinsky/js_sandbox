@@ -639,29 +639,31 @@
 // }
 
 
-for(let i=0; i<=100; i++){
-    if(i % 3 === 0 && i % 5 === 0){
-        console.log('FizzBuzz');
-        continue;
-    }
-    else if(i % 3 === 0){
-        console.log('Fizz');
-        continue;
-    }else if(i % 5 === 0){
-        console.log('Buzz');
-        continue;
-    }
-    console.log(i);
-}
-
-
-
-// //While loop
-
-// let i = 0;
-
-// while(i <= 10){
+// for(let i=0; i<=100; i++){
+//     if(i % 3 === 0 && i % 5 === 0){
+//         console.log('FizzBuzz');
+//         continue;
+//     }
+//     else if(i % 3 === 0){
+//         console.log('Fizz');
+//         continue;
+//     }else if(i % 5 === 0){
+//         console.log('Buzz');
+//         continue;
+//     }
 //     console.log(i);
-//     i++;
 // }
 
+
+// WHILE LOOP
+
+let i = 0;
+
+while(i<=10){
+    if(i === 3){
+        console.log('Fizz');
+        break;
+    }
+    console.log(i);
+    i++;
+}
