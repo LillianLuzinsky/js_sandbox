@@ -671,11 +671,32 @@
 //DO WHILE LOOP
 //always going to run no matter what
 
-let i = 0;
+// let i = 0;
 
-do{
-    console.log('number ' + i);
-    i++;
-}
+// do{
+//     console.log('number ' + i);
+//     i++;
+// }
 
-while(i<=10);
+// while(i<=10);
+
+
+//LOOP ARRAYS
+
+const car = ['Ford', 'Chevy', 'Honda', 'Toyota'];
+
+// for(let i = 0; i<car.length; i++){
+//     console.log(car[i]);
+// }
+
+// let i = 0;
+
+// while(i < car.length){
+//     console.log(car[i]);
+//     i++;
+// }
+
+//FOR EACH LOOP
+car.forEach(function(car){
+    console.log(car)
+})
