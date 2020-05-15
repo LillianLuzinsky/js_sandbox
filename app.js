@@ -657,13 +657,25 @@
 
 // WHILE LOOP
 
+// let i = 0;
+
+// while(i<=10){
+//     if(i === 3){
+//         console.log('Fizz');
+//         break;
+//     }
+//     console.log(i);
+//     i++;
+// }
+
+//DO WHILE LOOP
+//always going to run no matter what
+
 let i = 0;
 
-while(i<=10){
-    if(i === 3){
-        console.log('Fizz');
-        break;
-    }
-    console.log(i);
+do{
+    console.log('number ' + i);
     i++;
 }
+
+while(i<=10);
