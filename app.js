@@ -696,9 +696,10 @@ const car = ['Ford', 'Chevy', 'Honda', 'Toyota'];
 //     i++;
 // }
 
-//FOR EACH LOOP
-// car.forEach(function(car){
-//     console.log(car)
+// FOR EACH LOOP 
+// takes up to 3 params
+// car.forEach(function(car, index, array){
+//     console.log(`${index}: ${car} = ${array}`);
 // })
 
 //MAP
@@ -715,3 +716,16 @@ const car = ['Ford', 'Chevy', 'Honda', 'Toyota'];
 // });
 
 // console.log(names);
+
+
+// FOR IN LOOP
+//often used for object
+// const user = {
+//     firstName: 'John',
+//     lastName: 'Doe',
+//     age: 40
+// }
+
+// for(let key in user){
+//     console.log(`${key}: ${user[key]}`);
+// }
